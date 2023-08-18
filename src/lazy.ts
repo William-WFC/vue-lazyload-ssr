@@ -147,6 +147,18 @@ class Lazy {
   }
 
   /*
+  * ssr add image src
+  * @param  {object} binding vue directive binding
+  * @return
+  */
+  ssrAdd(binding: any) {
+    let { src, loading, error, cors } = this._valueFormatter(binding.value)
+    return {
+      src,
+    }
+  }
+
+  /*
    * add image listener to queue
    * @param  {DOM} el
    * @param  {object} binding vue directive binding

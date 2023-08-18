@@ -591,6 +591,17 @@ class Lazy {
         }
     }
     /*
+    * ssr add image src
+    * @param  {object} binding vue directive binding
+    * @return
+    */
+    ssrAdd(binding) {
+        let { src, loading, error, cors } = this._valueFormatter(binding.value);
+        return {
+            src
+        };
+    }
+    /*
      * add image listener to queue
      * @param  {DOM} el
      * @param  {object} binding vue directive binding
@@ -1120,7 +1131,8 @@ var index = {
             beforeMount: lazy.add.bind(lazy),
             beforeUpdate: lazy.update.bind(lazy),
             updated: lazy.lazyLoadHandler.bind(lazy),
-            unmounted: lazy.remove.bind(lazy)
+            unmounted: lazy.remove.bind(lazy),
+            getSSRProps: lazy.ssrAdd.bind(lazy)
         });
         Vue.directive('lazy-container', {
             beforeMount: lazyContainer.bind.bind(lazyContainer),

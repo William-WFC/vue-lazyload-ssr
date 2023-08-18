@@ -34,7 +34,8 @@ export default {
       beforeMount: lazy.add.bind(lazy),
       beforeUpdate: lazy.update.bind(lazy),
       updated: lazy.lazyLoadHandler.bind(lazy),
-      unmounted: lazy.remove.bind(lazy)
+      unmounted: lazy.remove.bind(lazy),
+      getSSRProps: lazy.ssrAdd.bind(lazy),
     })
     Vue.directive('lazy-container', {
       beforeMount: lazyContainer.bind.bind(lazyContainer),

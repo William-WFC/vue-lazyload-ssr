@@ -12,7 +12,9 @@ Vue module for lazyloading images in your applications. Some of goals of this pr
 * Be lightweight, powerful and easy to use
 * Work on any image type
 * Add loading class while image is loading
-* Supports both of Vue 1.0 and Vue 2.0
+* Supports both of Vue 1.0 and Vue 2.0 (tag2.x)
+* Supports Vue 3.x (tag3.0.0)
+* Supports SSR (tag3.1.0)
 
 
 
