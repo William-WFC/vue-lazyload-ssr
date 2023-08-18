@@ -1,4 +1,4 @@
-# Vue-Lazyload
+# Vue-Lazyload-ssr
 
 [![Build Status](https://img.shields.io/circleci/project/hilongjw/vue-lazyload/master.svg?style=flat-square)](https://circleci.com/gh/hilongjw/vue-lazyload)
 [![npm version](https://img.shields.io/npm/v/vue-lazyload.svg?style=flat-square)](http://badge.fury.io/js/vue-lazyload)
@@ -40,7 +40,7 @@ Vue module for lazyloading images in your applications. Some of goals of this pr
 
 # Requirements
 
-- [Vue.js](https://github.com/vuejs/vue) `1.x` or `2.x`
+- [Vue.js](https://github.com/vuejs/vue) `1.x` or `2.x` or `3.x`(for v3.0.0)
 
 
 # Installation

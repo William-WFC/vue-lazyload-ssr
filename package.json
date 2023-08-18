@@ -1,5 +1,5 @@
 {
-  "name": "vue-lazyload",
+  "name": "vue-lazyload-ssr",
   "version": "3.0.0",
   "description": "Vue module for lazy-loading images in your vue.js applications.",
   "main": "vue-lazyload.js",
