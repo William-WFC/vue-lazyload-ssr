@@ -1,6 +1,6 @@
 {
   "name": "vue-lazyload-ssr",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Vue module for lazy-loading images in your vue.js applications.",
   "main": "vue-lazyload.js",
   "module": "vue-lazyload.esm.js",
@@ -13,7 +13,7 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/hilongjw/vue-lazyload.git"
+    "url": "https://github.com/William-WFC/vue-lazyload-ssr/tree/next"
   },
   "typings": "types/index.d.ts",
   "keywords": [
@@ -22,7 +22,7 @@
     "lazyload",
     "vue-directive"
   ],
-  "author": "Awe <hilongjw@gmail.com>",
+  "author": "WFC <wfc1224@gmail.com>",
   "bugs": {
     "url": "https://github.com/hilongjw/vue-lazyload/issues"
   },
