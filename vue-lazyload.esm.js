@@ -1,5 +1,5 @@
 /*!
- * Vue-Lazyload.js v3.0.0
+ * Vue-Lazyload.js v3.1.0
  * (c) 2023 Awe <hilongjw@gmail.com>
  * Released under the MIT License.
  */
@@ -538,7 +538,7 @@ const DEFAULT_OBSERVER_OPTIONS = {
 };
 class Lazy {
     constructor({ preLoad, error, throttleWait, preLoadTop, dispatchEvent, loading, attempt, silent = true, scale, listenEvents, filter, adapter, observer, observerOptions }) {
-        this.version = '"3.0.0"';
+        this.version = '"3.1.0"';
         this.lazyContainerMananger = null;
         this.mode = modeType.event;
         this.ListenerQueue = [];
@@ -591,14 +591,14 @@ class Lazy {
         }
     }
     /*
-    * ssr add image src
+    * ssr add image src。服务端渲染采用loading占位图作为src。
     * @param  {object} binding vue directive binding
     * @return
     */
     ssrAdd(binding) {
         let { src, loading, error, cors } = this._valueFormatter(binding.value);
         return {
-            src
+            src: loading
         };
     }
     /*

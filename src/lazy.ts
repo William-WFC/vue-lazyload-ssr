@@ -147,14 +147,14 @@ class Lazy {
   }
 
   /*
-  * ssr add image src
+  * ssr add image src。服务端渲染采用loading占位图作为src。
   * @param  {object} binding vue directive binding
   * @return
   */
   ssrAdd(binding: any) {
     let { src, loading, error, cors } = this._valueFormatter(binding.value)
     return {
-      src,
+      src: loading,
     }
   }
 

@@ -1,7 +1,7 @@
 {
   "name": "vue-lazyload-ssr",
-  "version": "3.1.0",
-  "description": "Vue module for lazy-loading images in your vue.js applications.",
+  "version": "3.1.1",
+  "description": "Vue module for lazy-loading images in your vue.js applications.(support ssr)",
   "main": "vue-lazyload.js",
   "module": "vue-lazyload.esm.js",
   "unpkg": "vue-lazyload.js",
@@ -24,7 +24,7 @@
   ],
   "author": "WFC <wfc1224@gmail.com>",
   "bugs": {
-    "url": "https://github.com/hilongjw/vue-lazyload/issues"
+    "url": "https://github.com/William-WFC/vue-lazyload-ssr/issues"
   },
   "browserslist": [
     "> 1%",
